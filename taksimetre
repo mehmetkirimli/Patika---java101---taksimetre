@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class taksimetre {
+    public static void main(String[] args) {
+        // degiskenleri tanimla
+        int a  ;
+        double b ;
+        //Scanner sinifi ve lib. tanimla
+        Scanner bjk = new Scanner(System.in);
+        System.out.println("gidilecek mesafeyi giriniz  :");
+        a = bjk.nextInt();
+        System.out.println("gidilen mesafe : " + a + " km'dir.");
+        b= 10 + (2.20 * a);
+
+
+        b=(b<20) ? 20 : b ;
+        System.out.println("gidilen mesafenin tutari : " + b + " turk lirasidir.");
+
+
+
+
+    }
+}
